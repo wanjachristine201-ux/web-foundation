@@ -1,0 +1,55 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --border-color: #cccccc;
+    --button-bg: #0066cc;
+    --button-text: #ffffff;
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --border-color: #444444;
+    --button-bg: #3a82f6;
+    --button-text: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Character counter warning states specified by instructions */
+.warning {
+    color: orange;
+    font-weight: normal;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
