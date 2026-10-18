@@ -1,0 +1,8 @@
+
+# Course Reflection & Capstone Review
+
+Looking back over the web foundations curriculum, the most challenging concept for me was bridging asynchronous JavaScript API workflows (`fetch`, `async/await`, and `try/catch` error handling) with robust relational database design. Initially, managing state changes across asynchronous requests while maintaining clean DOM rendering felt complex. I overcame this by breaking down each request into distinct phases—handling loading, success, error, and empty states methodically—and practicing modular function structures.
+
+Reflecting on Project 2 (QuickNotes System Design), if I were to improve my capstone implementation based on feedback and deeper understanding, I would enhance the backend error handling middleware and add automated integration tests for edge cases like concurrent note edits and token expiration. Designing the architecture documents also taught me how crucial caching layers (like Redis) and read replicas are for scaling systems to millions of users.
+
+Moving forward, I plan to dive deeper into advanced backend engineering, secure authentication protocols (OAuth2/JWT), and database performance tuning. This program has given me a rock-solid foundation in both frontend implementation and enterprise-grade system architecture, and I am excited to apply these skills to future software engineering projects and community leadership roles.
