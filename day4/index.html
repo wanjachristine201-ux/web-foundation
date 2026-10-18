@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - QuickNotes App</title>
+    <title>Project 1 - QuickNotes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>QuickNotes Manager</h1>
-        <p>Capture and organize your notes effortlessly.</p>
+        <h1>QuickNotes Application</h1>
+        <p>Capture, store, and manage your daily notes.</p>
     </header>
 
     <main>
-        <section class="form-container">
-            <h2>Add New Note</h2>
+        <section class="form-section">
+            <h2>Create a Note</h2>
             <form id="note-form">
                 <div>
                     <label for="note-title">Title:</label><br>
-                    <input type="text" id="note-title" required placeholder="Enter title...">
+                    <input type="text" id="note-title" required placeholder="Enter note title...">
                 </div>
                 <div>
                     <label for="note-body">Content:</label><br>
                     <textarea id="note-body" rows="4" required placeholder="Write your note here..."></textarea>
                 </div>
-                <button type="submit" id="add-btn">Add Note</button>
+                <button type="submit" id="submit-btn">Save Note</button>
             </form>
         </section>
 
-        <section class="notes-container">
-            <h2>My Notes List</h2>
+        <section class="list-section">
+            <h2>Saved Notes</h2>
             <ul id="notes-list">
-                <!-- Dynamically populated notes will appear here -->
+                <!-- Notes will be rendered here dynamically -->
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 QuickNotes App</p>
+        <p>© 2026 QuickNotes Project 1</p>
     </footer>
 
 </body>

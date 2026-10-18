@@ -11,8 +11,9 @@ noteForm.addEventListener("submit", (e) => {
 
     if (!title || !body) return;
 
+    // Create note list element securely using textContent
     const li = document.createElement("li");
-    
+
     const h3 = document.createElement("h3");
     h3.textContent = title;
 
@@ -21,7 +22,9 @@ noteForm.addEventListener("submit", (e) => {
 
     li.appendChild(h3);
     li.appendChild(p);
+
     notesList.appendChild(li);
 
+    // Reset form inputs
     noteForm.reset();
 });
