@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note Editor - Day 4</title>
+    <title>Project 1 - QuickNotes App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>QuickNotes Editor</h1>
-        <button id="theme-toggle">Dark mode</button>
+        <h1>QuickNotes Manager</h1>
+        <p>Capture and organize your notes effortlessly.</p>
     </header>
 
     <main>
-        <section>
-            <label for="note-text">Type your note below:</label><br>
-            <textarea id="note-text" rows="8" cols="50" placeholder="Start typing..."></textarea>
-            
-            <p id="char-count">0 / 200 characters</p>
-            <p id="word-count">0 words</p>
-            
-            <button id="clear-btn">Clear</button>
+        <section class="form-container">
+            <h2>Add New Note</h2>
+            <form id="note-form">
+                <div>
+                    <label for="note-title">Title:</label><br>
+                    <input type="text" id="note-title" required placeholder="Enter title...">
+                </div>
+                <div>
+                    <label for="note-body">Content:</label><br>
+                    <textarea id="note-body" rows="4" required placeholder="Write your note here..."></textarea>
+                </div>
+                <button type="submit" id="add-btn">Add Note</button>
+            </form>
+        </section>
+
+        <section class="notes-container">
+            <h2>My Notes List</h2>
+            <ul id="notes-list">
+                <!-- Dynamically populated notes will appear here -->
+            </ul>
         </section>
     </main>
 
